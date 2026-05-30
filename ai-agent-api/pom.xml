@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.6</version>
+        <version>3.5.14</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xigua</groupId>
-    <artifactId>xigua-ai-agent</artifactId>
+    <artifactId>ai-agent-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>xigua-ai-agent</name>
-    <description>xigua-ai-agent</description>
+    <name>ai-agent-api</name>
+    <description>ai-agent-api</description>
     <url/>
     <licenses>
         <license/>
@@ -32,7 +32,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -42,10 +42,9 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc-test</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <!---->
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -57,7 +56,27 @@
             <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
             <version>4.4.0</version>
         </dependency>
+        <!--阿里云百炼，灵积大模型服务-->
+        <!-- Source: https://mvnrepository.com/artifact/com.alibaba/dashscope-sdk-java -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dashscope-sdk-java</artifactId>
+            <version>2.22.17</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Spring AI Alibaba Agent Framework -->
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-agent-framework</artifactId>
+            <version>1.1.2.0</version>
+        </dependency>
 
+        <!-- DashScope ChatModel 支持（如果使用其他模型，请跳转 Spring AI 文档选择对应的 starter） -->
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+            <version>1.1.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>

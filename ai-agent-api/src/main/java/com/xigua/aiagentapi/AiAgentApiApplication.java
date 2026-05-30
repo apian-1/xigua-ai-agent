@@ -1,13 +1,13 @@
-package com.xigua.aaiagent;
+package com.xigua.aiagentapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class XiguaAiAgentApplication {
+public class AiAgentApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(XiguaAiAgentApplication.class, args);
+        SpringApplication.run(AiAgentApiApplication.class, args);
     }
 
 }

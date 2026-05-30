@@ -1,10 +1,10 @@
-package com.xigua.aaiagent;
+package com.xigua.aiagentapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class XiguaAiAgentApplicationTests {
+class AiAgentApiApplicationTests {
 
     @Test
     void contextLoads() {
