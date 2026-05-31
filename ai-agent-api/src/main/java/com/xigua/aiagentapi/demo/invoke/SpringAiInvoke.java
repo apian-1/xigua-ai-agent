@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 /**
  * Spring AI 框架调用AI大模型
  */
-@Component
+//@Component
 public class SpringAiInvoke implements CommandLineRunner {
     // CommandLineRunner项目启动时运行一次，用于测试。
 
     @Resource
-    private ChatModel dashscopechatModel;
+    private ChatModel dashscopechatModel;   //一定要是dashscopechatModel名称
 
     @Override
     public void run(String... args) throws Exception {

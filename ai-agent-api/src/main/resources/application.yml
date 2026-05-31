@@ -3,12 +3,16 @@ spring:
     name: xigua-ai-agent
   profiles:
     active: local
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: gemma3:1b
 server:
   port: 8123
   servlet:
     context-path: /api
-
-# springdoc-openapi????
+# springdoc-openapi ????
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
@@ -20,7 +24,7 @@ springdoc:
     - group: 'default'
       paths-to-match: '/**'
       packages-to-scan: com.xigua.aaiagent.controller
-# knife4j???????????????
+# knife4j ???????????????
 knife4j:
   enable: true
   setting:
