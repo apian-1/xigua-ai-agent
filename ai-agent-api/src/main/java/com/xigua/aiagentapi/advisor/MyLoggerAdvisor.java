@@ -13,6 +13,7 @@ import org.springframework.ai.chat.client.advisor.api.StreamAroundAdvisor;
 import org.springframework.ai.chat.client.advisor.api.StreamAroundAdvisorChain;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.model.MessageAggregator;
+import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.model.ModelOptionsUtils;
 import reactor.core.publisher.Flux;
 
